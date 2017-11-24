@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			TRABALHO 1 – ESTRUTURA DE DADOS II
+		</title>
+		<style>
+			mono{
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			Função de Impressão
+		</h2>
+		<p>
+			Essa função imprime cada nó, de acordo com o que é solicitado na descrição do trabalho.<br>
+			Os itens impressos são:
+			<ul>
+				<li>Chave</li>
+				<li>Chave do nó pai</li>
+				<li>Nível do nó</li>
+			</ul>
+			Cada campo é acessado através do ponteiro <mono>AVLTree **node</mono>
+		</p>
+		<h3>
+			Parâmetros:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><mono>AVLTree **node</mono></b></td>
+        		<td>Ponteiro duplo que aponta para o nó que vai ser impresso.</td>
+		    </tr>
+		</table>
+		<h3>
+			Uso por:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="pre.htm"><mono>throughAVLPreorder(...);</mono></a></b></td>
+        		<td>Função recursiva que percorre a árvore em preordem, marcando cada nodo com o seu nível e setando o no pai.</td>
+		    </tr>
+		    <tr> 
+        		<td><b><a href="in.htm"><mono>throughAVLInorder(...);</mono></a></b></td>
+        		<td>Função recursiva que percorre a árvore em ordem, marcando cada nodo com o seu nível e setando o no pai.</td>
+		    </tr>
+		    <tr> 
+        		<td><b><a href="post.htm"><mono>throughAVLPostorder(...);</mono></a></b></td>
+        		<td>Função recursiva que percorre a árvore em pos ordem, marcando cada nodo com o seu nível e setando o no pai.</td>
+		    </tr>
+		</table>
+		<h3>
+			Usa:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="identation.htm"><mono>identation(...);</mono></a></b></td>
+        		<td>Essa classe identa cada nó no momento da impressão, usando como referencia de espacamento, o nivel do no.</td>
+		    </tr>
+		</table>
+		<h3>
+			Retorno:
+		</h3>
+			<mono>void</mono> (Vazio);
+	</body>
+</html>

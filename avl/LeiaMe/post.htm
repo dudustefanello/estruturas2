@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			TRABALHO 1 – ESTRUTURA DE DADOS II
+		</title>
+		<style>
+			mono{
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			Função de Percorrer em Pre-Ordem
+		</h2>
+		<p>
+			Função recursiva que percorre a árvore em preordem, marcando cada nodo com o seu nível e setando o no pai.<br>
+			Também é usada para matar a árvore no encerramento do programa.
+			<ul>
+				<li>Acessa o nó da esquerda por recurssão;</li>
+				<li>Acessa o nó da direita por recurssão;</li>
+				<li>Imprime o nó passado por referência;</li>
+			</ul>
+		</p>
+		<h3>
+			Parâmetros:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><mono>AVLTree **node</mono></b></td>
+        		<td>Ponteiro duplo que aponta para o nó raiz e recursivamente, cada nó que será acessado.</td>
+		    </tr>
+		    <tr> 
+        		<td><b><mono>int option</mono></b></td>
+        		<td>Inteiro, de uso do programador, que definirá se a chamada da função será para impressão da árvore em pós ordem ou para matar a árvore.</td>
+		    </tr>
+		    <tr> 
+        		<td><b><mono>int level</mono></b></td>
+        		<td>Inteiro que marca o nível de cada nó, é incrmentado a cada acesso recurssivo.</td>
+		    </tr>
+		    <tr> 
+        		<td><b><mono>AVLTree **father</mono></b></td>
+        		<td>Ponteiro duplo que aponta para o pai do nó que está sendo acessado.</td>
+		    </tr>
+		</table>
+		<h3>
+			Uso por:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="main.htm"><mono>main(...);</mono></a></b></td>
+        		<td>Direciona o usuário a usar todas as funções disponíveis no programa, coleta os valores que serão inseridos na árvore.</td>
+		    </tr>
+		</table>
+		<h3>
+			Usa:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="print.htm"><mono>printNodeAVL(...);</mono></a></b></td>
+        		<td>Essa função imprime cada nó, de acordo com o que é solicitado na descrição do trabalho.</td>
+		    </tr>
+		</table>
+		<h3>
+			Retorno:
+		</h3>
+			<mono>void</mono> (Vazio).
+	</body>
+</html>

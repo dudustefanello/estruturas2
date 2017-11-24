@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			TRABALHO 1 – ESTRUTURA DE DADOS II
+		</title>
+		<style>
+			mono{
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			Estrutura Geral<br>
+			<mono>AVLTree;</mono>
+		</h2>
+		<p>
+			Estrutura unica, que contem todos os campos utilizados na arvore AVL.<br>
+			Não foi utilizada a segunda estrutura que está na descrição do trabalho.
+		</p>
+		<h3>
+			Campos:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><mono>int key</mono></b></td>
+        		<td>Inteiro que contém a informação principal de cada nó.</td>
+		    </tr>
+		    <tr>
+		        <td><b><mono>int level</mono></b></td>
+		        <td>Inteiro que marca o nível de cada nó no momento da impressão.</td>
+		    </tr>
+		    <tr>
+		        <td><b><mono>int balanceFactor</mono></b></td>
+		        <td>Inteiro utilizado para definir se é necessário ou não executar um balanceamento, se ele será simples ou duplo.</td>
+		    </tr>
+		    <tr>
+		        <td><b><mono>AVLTree *left</mono></b></td>
+		        <td>Ponteiro que aponta para o filho à esquerda de cada nó</td>
+		    </tr>
+		    <tr>
+		        <td><b><mono>*AVLTree right</mono></b></td>
+		        <td>Ponteiro que aponta para o filho à direita de cada nó</td>
+		    </tr>
+		    <tr>
+		        <td><b><mono>AVLTree *father</mono></b></td>
+		        <td>Ponteiro que aponta para o pai de cada nó, é usado na função de impressão.</td>
+		    </tr>
+		</table>
+	</body>
+</html>

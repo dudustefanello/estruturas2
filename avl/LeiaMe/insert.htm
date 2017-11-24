@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			TRABALHO 1 – ESTRUTURA DE DADOS II
+		</title>
+		<style>
+			mono{
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			Função de Inserção Balanceada
+		</h2>
+		<p>
+			Inicializa a arvore caso ela for nula, insere de forma recursiva:<br>
+        	- A esquerda se a nova chave for menor que a chave atual<br>
+			- A direita se a nova chave for maior que a chave atual<br>
+			Chama as funcoes de rotacao quando necessario 
+		</p>
+		<h3>
+			Parâmetros:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><mono>AVLTree **node</mono></b></td>
+        		<td>Ponteiro duplo que aponta para o nó raiz e recursivamente, cada nó que será acessado.</td>
+		    </tr>
+		    <tr> 
+        		<td><b><mono>int value</mono></b></td>
+        		<td>Inteiro que é a chave que está sendo inserida.</td>
+		    </tr>
+		    <tr> 
+        		<td><b><mono>int *changeHeight</mono></b></td>
+        		<td>Ponteiro de inteiro para verificar se a altura da árvore foi modifacada a cada inserção</td>
+		    </tr>
+		</table>
+		<h3>
+			Uso por:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="main.htm"><mono>main(...);<mono></a></b></td>
+        		<td>Direciona o usuário a usar todas as funções disponíveis no programa, coleta os valores que serão inseridos na árvore.</td>
+		    </tr>
+		</table><h3>
+			Usa:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="main.htm"><mono>rotationRight(...);<mono></a></b></td>
+        		<td>Executa a rotação à direita quando é encontrado um erro no balanceamento da árvore;<br>
+					Faz a rotacao simples ou dupla, na mesma funcao;<br>
+					a rotacao simples e dupla ocorrem de forma totalmente desconexas.</td>
+        	</tr>
+        	<tr>
+        		<td><b><a href="main.htm"><mono>rotationLeft(...);<mono></a></b></td>
+        		<td>Executa a rotacao a esquerda quando e encontrado um erro no balanceamento da arvore;<br>
+					Faz a rotacao simples ou dupla, na mesma funcao;<br>
+					a rotacao simples e dupla ocorrem de forma totalmente desconexas.</td>
+		    </tr>
+		</table>
+		<h3>
+			Retorno:
+		</h3>
+			<mono>int</mono>Inteiro, usado como booleano para definir sucesso ou inssucesso da operação de inserção.
+	</body>
+</html>

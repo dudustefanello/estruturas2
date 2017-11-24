@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			TRABALHO 1 – ESTRUTURA DE DADOS II
+		</title>
+		<style>
+			mono{
+				font-family: monospace;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			Função Principal
+		</h2>
+		<p>
+			Direciona o usuário a usar todas as funções disponíveis no programa e coleta os valores que serão inseridos na árvore.
+		</p>
+		<h2>
+			Parâmetros:
+		</h2>
+			<mono>void</mono> (Vazio).
+		<h2>
+			Variáveis:
+		</h2>
+		<table>
+			<tr>
+				<td><mono>AVLTree *AVLRoot</mono></td>
+				<td>Ponteiro que aponta para a raiz da árvore, usado na chamada de todas as funções em que a árvore é acessada.</td>
+			</tr>
+			<tr>
+				<td><mono>int changeHeight</mono></td>
+				<td>Inteiro que sinaliza se houve modificação na altura da árvore ou nao.<br>
+					Essa informação é usada para chamar ou não as funções de rotação</td>
+			</tr>
+			<tr>
+				<td><mono>int option</mono></td>
+				<td>Inteiro, entrada pelo usuário em tempo de execução, para escolher a função a ser executada</td>
+			</tr>
+			<tr>
+				<td><mono>int value</mono></td>
+				<td>Inteiro, entrada pelo usuário em tempo de execução, para passar o valor a ser inserido na árvore</td>
+			</tr>
+			<tr>
+				<td><mono>int sucess</mono></td>
+				<td>Inteiro que sinaliza a situação de sucesso da função de inserção, para exibição de mensagem no programa</td>
+			</tr>
+			<tr>
+				<td><mono>int first</mono></td>
+				<td>Inteiro que sinaliza se deve ser exibida a mensagem de sucesso ou inssucesso da inserção.</td>
+			</tr>
+		</table>
+		<h2>
+			Usa:
+		</h2>
+		<table>
+			<tr>
+				<td><mono>insertAVL(...);</mono></td>
+				<td>Inicializa a arvore caso ela for nula, insere de forma recursiva e chama as funções de rotação quando necessário</td>
+			</tr>
+			<tr>
+				<td><mono>throughAVLPreorder(...);</mono></td>
+				<td>Função recursiva que percorre a árvore em preordem, marcando cada nodo com o seu nível e setando o no pai.</td>
+			</tr>
+			<tr>
+				<td><mono>throughAVLInorder(...);</mono></td>
+				<td>Função recursiva que percorre a árvore em ordem, marcando cada nodo com o seu nível e setando o no pai.</td>
+			</tr>
+			<tr>
+				<td><mono>throughAVLPostorder(...);</mono></td>
+				<td>Função recursiva que percorre a árvore em preordem, marcando cada nodo com o seu nível e setando o no pai.<br>
+				Também é usada para matar a árvore no encerramento do programa.</td>
+			</tr>
+		</table>
+		<h2>
+			Retorno:
+		</h2>
+			<mono>int</mono> Inteiro;
+	</body>
+</html>

@@ -1,0 +1,4 @@
+dados/6252.txt
+dados/7277.txt
+dados/6017.txt
+dados/6155.txt

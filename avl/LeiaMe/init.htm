@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			TRABALHO 1 – ESTRUTURA DE DADOS II
+		</title>
+		<style>
+			mono{
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			Função de Inicialização
+		</h2>
+		<p>
+			Função que inicializa a árvore se a raiz ainda for nula
+		</p>
+		<h3>
+			Parâmetros:
+		</h3>
+			<mono>void</mono> (Vazio);
+		<h3>
+			Uso por:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="insert.htm"><mono>insertAVL(...);</mono></a></b></td>
+        		<td>Inicializa a arvore caso ela for nula, insere de forma recursiva:<br>
+        			- A esquerda se a nova chave for menor que a chave atual<br>
+					- A direita se a nova chave for maior que a chave atual<br>
+					Chama as funcoes de rotacao quando necessario 
+    			</td>
+		    </tr>
+		</table>
+		<h3>
+			Usa:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><mono>malloc(...);</mono></b></td>
+        		<td>A função  malloc aloca um bloco de bytes consecutivos na memória RAM do computador e devolve o endereço desse bloco.</td>
+		    </tr>
+		</table>
+		<h3>
+			Retorno:
+		</h3>
+			Ponteiro do tipo <mono>AVLTree</mono>;
+	</body>
+</html>

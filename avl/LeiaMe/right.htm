@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			TRABALHO 1 – ESTRUTURA DE DADOS II
+		</title>
+		<style>
+			mono{
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			Função de Rotação à Direita
+		</h2>
+		<p>
+			Executa a rotação à direita quando é encontrado um erro no balanceamento da árvore;<br>
+			Faz a rotacao simples ou dupla, na mesma funcao;<br>
+			a rotacao simples e dupla ocorrem de forma totalmente desconexas.<br>
+
+		</p>
+		<h3>
+			Parâmetros:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><mono>AVLTree **node</mono></b></td>
+        		<td>Ponteiro duplo que aponta para o nó raiz e recursivamente, cada nó que será acessado.</td>
+		    </tr>
+		</table>
+		<h3>
+			Variáveis:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><mono>AVLTree *u</mono></b></td>
+        		<td>Ponteiro auxiliar que recebe o valor mais próximo à raiz, no sentido contrário ao da rotação</td>
+		    </tr>
+		    <tr> 
+        		<td><b><mono>AVLTree *v</mono></b></td>
+        		<td>Ponteiro auxiliar que recebe o segundo valor à partir da raiz, usado nos casos de rotação dupla</td>
+		    </tr>
+		</table>
+		<h3>
+			Uso por:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="insert.htm"><mono>insertAVL(...);</mono></a></b></td>
+        		<td>Inicializa a arvore caso ela for nula, insere de forma recursiva:<br>
+		        	- A esquerda se a nova chave for menor que a chave atual<br>
+					- A direita se a nova chave for maior que a chave atual<br>
+					Chama as funcoes de rotacao quando necessario.
+				</td>
+		    </tr>
+		</table>
+		<h3>
+			Usa:
+		</h3>
+		<table>
+    		<tr> 
+        		<td><b><a href="bFactor.htm">balanceFactor;</a></b></td>
+        		<td>Fator de Balanceamento: Valores que variam de -2 à 2 e serve para determinar qual rotação deve ser feita;
+				</td>
+		    </tr>
+		</table>
+		<h3>
+			Retorno:
+		</h3>
+			Ponteiro do tipo <mono>AVLTree</mono>.
+	</body>
+</html>
